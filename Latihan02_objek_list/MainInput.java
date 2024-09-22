@@ -1,17 +1,17 @@
 package Latihan02_objek_list;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MainInput {
+    
     static Scanner sc = new Scanner(System.in);
     static int pilih = 0;
-    static ArrayList<Anggota> anggotaList = new ArrayList<>();
+    static Petugas p = new Petugas();
 
     public static void main(String[] args) {
         do {
             boolean valid = false;
-            menu();
+            mainMenu();
 
             // memastikan user harus input integer
             while (!valid) {
@@ -27,21 +27,21 @@ public class MainInput {
             }
 
             if (pilih == 1) {
-                tambahAnggota();
+                mainTambahAnggota();
             } else if (pilih == 2) {
-                tampilAnggota(anggotaList);
+                p.tampilAnggota();
                 System.out.print("[ Tekan apapun untuk kembali ]");
                 sc.nextLine();
                 sc.nextLine();
             } else if (pilih == 3) {
-                hapusAnggota(anggotaList);
+                mainHapusAnggota();
             }
 
         } while (pilih != 4);
     }
 
-    static void menu() {
-        System.out.println("Jumlah data: " + anggotaList.size());
+    static void mainMenu() {
+        System.out.println("Jumlah data: " + p.jumlahAnggota());
         System.out.println("-----------------------");
         System.out.println("1. Tambah Anggota");
         System.out.println("2. Tampilkan Anggota");
@@ -50,7 +50,7 @@ public class MainInput {
         System.out.println("-----------------------");
     }
 
-    static void tambahAnggota() {
+    static void mainTambahAnggota() {
         String npm, nama, kelas;
 
         sc.nextLine();
@@ -66,37 +66,15 @@ public class MainInput {
         a.setNama(nama);
         a.setKelas(kelas);
 
-        anggotaList.add(a); // simpan
+        p.simpanAnggota(a);
         System.out.println("[ Data anggota tersimpan. ]");
     }
-
-    static void tampilAnggota(ArrayList<Anggota> anggotaList) {
-        System.out.println("DATA ANGGOTA");
-        System.out.println("------------------------------------");
-
-        if (anggotaList.size() == 0) {
-            System.out.println("KOSONG!");
-        } else {
-            for (int i = 0; i < anggotaList.size(); i++) {
-                System.out.printf(
-                        "| %-2s | %-5s | %-13s | %-3s |",
-                        i + 1,
-                        anggotaList.get(i).getNpm(),
-                        (anggotaList.get(i).getNama().length() > 13) ? anggotaList.get(i).getNama().substring(0, 13)
-                                : anggotaList.get(i).getNama(),
-                        anggotaList.get(i).getKelas());
-                System.out.println();
-            }
-        }
-
-        System.out.println("------------------------------------");
-    }
-
-    static void hapusAnggota(ArrayList<Anggota> anggotaList) {
+    
+    static void mainHapusAnggota() {
         boolean valid = false;
         int baris = 0;
 
-        tampilAnggota(anggotaList);
+        p.tampilAnggota();
 
         // memastikan user harus input integer
         while (!valid) {
@@ -112,14 +90,15 @@ public class MainInput {
         }
 
         // jika salah baris
-        if (baris > anggotaList.size() ) {            
+        if (baris > p.jumlahAnggota() ) {            
             System.out.println("[ Gagal hapus, baris salah ]");
             sc.nextLine();
             sc.nextLine();
         } else {
-            anggotaList.remove(baris - 1);
+            p.hapusAnggota(baris - 1);
             System.out.println("[ Berhasil dihapus ]");
         }
+        
     }
-
+    
 }
