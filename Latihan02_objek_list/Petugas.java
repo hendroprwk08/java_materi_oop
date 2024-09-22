@@ -21,8 +21,6 @@ public class Petugas {
 
     void tampilAnggota() {
         // tabel anggota
-        // urut berdasarkan nama
-        
         int no = 0;
         System.out.println("DATA ANGGOTA");           
         System.out.println("------------------------------------");            
@@ -38,6 +36,14 @@ public class Petugas {
         }
         System.out.println("------------------------------------");            
         System.out.println();
+    }
+    
+    int jumlahAnggota(){
+        return anggotaList.size();
+    }
+    
+    void hapusAnggota(int index){
+        anggotaList.remove(index);
     }
 
     void tampilBuku() {
@@ -57,5 +63,9 @@ public class Petugas {
         }
         System.out.println("-------------------------------------");            
         System.out.println();
+    }
+    
+    int jumlahBuku(){
+        return bukuList.size();
     }
 }
