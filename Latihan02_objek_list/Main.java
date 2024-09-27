@@ -1,4 +1,4 @@
-package Latihan02_objek_list;
+package latihan02_objek_list;
 
 public class Main {
     // sesi 1 dasar pemanfaatan class dgn list 

@@ -1,4 +1,4 @@
-package Latihan02_objek_list;
+package latihan02_objek_list;
 
 import java.util.Scanner;
 
@@ -19,10 +19,17 @@ public class MainInput {
 
                 if (sc.hasNextInt()) {
                     pilih = sc.nextInt();
-                    valid = true;
+
+                    if(pilih > 4){
+                        System.out.println("[ Menu salah!, Coba lagi. ]");
+                        valid = false;
+                    }else{
+                        valid = true;        
+                    }
                 } else {
                     System.out.println("[ Coba lagi! ]");
                     sc.next();
+                    valid = false;
                 }
             }
 

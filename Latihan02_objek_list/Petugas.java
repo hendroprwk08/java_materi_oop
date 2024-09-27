@@ -1,4 +1,4 @@
-package Latihan02_objek_list;
+package latihan02_objek_list;
 
 import java.util.ArrayList;
 
@@ -35,7 +35,6 @@ public class Petugas {
             no++;
         }
         System.out.println("------------------------------------");            
-        System.out.println();
     }
     
     int jumlahAnggota(){
