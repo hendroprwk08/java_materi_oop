@@ -59,14 +59,24 @@ public class Main {
         bulan = sc.nextInt();
 
         if(tipe == 1){ // karyawan tetap
-            KaryawanTetap k = new KaryawanTetap(nik, nama, golongan, bulan);
+            // KaryawanTetap k = new KaryawanTetap(nik, nama, golongan, bulan);
+            KaryawanTetap k = new KaryawanTetap();
+            k.setNik(nik);
+            k.setNama(nama);
+            k.setGolongan(golongan);
+            k.setBulan(bulan);
             k.infoPinjam();
         }else if(tipe == 2){ // karyawan honorer
-            KaryawanHonorer k = new KaryawanHonorer(nik, nama, golongan, bulan);
+            // KaryawanHonorer k = new KaryawanHonorer(nik, nama, golongan, bulan);
+            KaryawanHonorer k = new KaryawanHonorer();
+            k.setNik(nik);
+            k.setNama(nama);
+            k.setGolongan(golongan);
+            k.setBulan(bulan);
             k.infoPinjam();        
         }
         
-        System.out.print("[Tekan apapun untuk lanjut]");
+        System.out.print("[ Tekan apapun untuk lanjut ]");
         sc.nextLine();
         sc.nextLine();
     }
@@ -75,6 +85,7 @@ public class Main {
         System.out.println("-----------------------");
         System.out.println("1. Karyawan Tetap");
         System.out.println("2. Karyawan Honorer");
+        System.out.println("3. Keluar");
         System.out.println("-----------------------");
     }
 }

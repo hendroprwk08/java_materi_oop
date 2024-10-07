@@ -4,11 +4,28 @@ public class KaryawanTetap {
     private String nik, nama, golongan;
     private int bulan;
     
-    public KaryawanTetap(String nk, String nm, String gl, int bl) {
-        this.nik = nk;
-        this.nama = nm;
-        this.golongan = gl;
-        this.bulan = bl;
+    // jangan gunakan constructor sebelum UTS
+    // public KaryawanTetap(String nk, String nm, String gl, int bl) {
+    //     this.nik = nk;
+    //     this.nama = nm;
+    //     this.golongan = gl;
+    //     this.bulan = bl;
+    // }
+
+    public void setNik(String nik) {
+        this.nik = nik;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public void setGolongan(String golongan) {
+        this.golongan = golongan;
+    }
+
+    public void setBulan(int bulan) {
+        this.bulan = bulan;
     }
 
     public void infoPinjam(){
