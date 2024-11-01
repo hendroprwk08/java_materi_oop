@@ -21,20 +21,20 @@ public class Transaksi {
         
         if(j >= 1 || j <= 100){
             kategori = "A";
-            pajak = h * 0.025;
+            pajak = 0.025;
         }else if(j >= 101 || j <= 200){
             kategori = "B";
-            pajak = h * 0.005;
+            pajak = 0.005;
         }else if(j >= 201){
             kategori = "C";
-            pajak = h * 0.1;
+            pajak = 0.1;
         }
         
-        double total = (h * j) + pajak;
+        double total = (h * j) * pajak;
 
         System.out.println("=== Pembayaran ===");
         System.out.println("Kategori : "+ kategori);
-        System.out.println(String.format("Pajak : Rp.%,2d", (int)pajak ));
+        System.out.println("Pajak : "+ pajak );
         System.out.println(String.format("Total : Rp.%,2d", (int)total));
         System.out.println();
         System.out.println("========================");
