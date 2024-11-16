@@ -19,7 +19,7 @@ public class Main {
                 if (sc.hasNextInt()) {
                     pilih = sc.nextInt();
 
-                    if(pilih > 4){
+                    if(pilih > 3){
                         System.out.println("[ Menu salah!, Coba lagi. ]");
                         valid = false;
                     }else{
@@ -32,11 +32,9 @@ public class Main {
                 }
             }
 
-            if (pilih == 1) {
-                mainInputKaryawan(1); // karyawan tetap
-            } else if (pilih == 2) {
-                mainInputKaryawan(2); // karyawan honorer
-            }
+            // pilih 1 = karyawan tetap
+            // pilih 2 = karyawan honorer
+            mainInputKaryawan(pilih);
 
         } while (pilih != 3);
     }
