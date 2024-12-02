@@ -30,7 +30,7 @@ public class Main {
     }
 
     private static void menuTampil() {
-        if(mhsList.size() == 0){
+        if(mhsList.isEmpty()){
             System.out.println("[ Kosong ]");
         }else{
             System.out.println("DATA MAHASISWA");
