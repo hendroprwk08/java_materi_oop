@@ -28,7 +28,7 @@ public class Main {
         Cargo c = new Cargo(nama, alamat, telepon);
         t.simpanCargo(c);
     }
-
+    // copy paste dari menuCargo
     static void menuBarang() {
         String kode, nama;
 
@@ -44,6 +44,7 @@ public class Main {
         t.simpanBarang(b);
     }
 
+    // copy dari menuBarang
     static void menuTransaksi() {
         int jumlah, harga;
 

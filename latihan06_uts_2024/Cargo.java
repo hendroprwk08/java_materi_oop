@@ -3,7 +3,11 @@ package latihan06_uts_2024;
 public class Cargo {
     private String nama, alamat, telepon;
 
-    public Cargo(String nama, String alamat, String telepon) {
+    public Cargo(
+        String nama, 
+        String alamat, 
+        String telepon
+         ) {
         this.nama = nama;
         this.alamat = alamat;
         this.telepon = telepon;
