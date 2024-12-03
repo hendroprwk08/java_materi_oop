@@ -4,9 +4,7 @@ public class Pasien {
     private String nama;
     private String alamat;
     
-    public Pasien(String string, String string2) {
-        //TODO Auto-generated constructor stub
-    }
+    public Pasien(String string, String string2) { }
 
     public int hitungBiaya(String jenisLayanan) {
         if(jenisLayanan.equalsIgnoreCase("Suntik")){

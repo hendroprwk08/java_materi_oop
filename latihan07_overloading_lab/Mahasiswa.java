@@ -28,13 +28,6 @@ public class Mahasiswa {
         this.ipk = ipk;
     }
 
-    // Fungsi untuk menampilkan data mahasiswa
-    public void tampilData() {
-        System.out.println("Nama: " + nama);
-        System.out.println("NPM: " + npm);
-        System.out.println("IPK: " + ipk);
-    }
-
     // Fungsi untuk menghitung rata-rata IPK (overloading)
     public double hitungRataRataIPK(ArrayList<Mahasiswa> listMahasiswa) {
         double totalIPK = 0;
@@ -44,7 +37,6 @@ public class Mahasiswa {
         return totalIPK / listMahasiswa.size();
     }
 
-    
     public String getNama() {
         return nama;
     }

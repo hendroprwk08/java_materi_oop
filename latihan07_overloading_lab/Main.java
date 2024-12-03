@@ -38,8 +38,8 @@ public class Main {
             for (Mahasiswa m : mhsList) {
                 System.out.printf(
                         "%-5s | %-13s | %-4s |",
-                        m.getNpm().substring(0, 5), // 5 digit saja
-                        (m.getNama().length() > 13) ? m.getNama().substring(0, 13) : m.getNama(),
+                        m.getNpm(), 
+                        m.getNama(), 
                         m.getIpk());
                 System.out.println();            
             }
@@ -82,7 +82,7 @@ public class Main {
             m = new Mahasiswa(npm, nama, ipk);
         }
 
-        mhsList.add(m);
+        mhsList.add(m); // simpan
 
         System.out.println("[ Data mahasiswa tersimpan. ]");
     }
