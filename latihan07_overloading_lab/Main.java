@@ -54,6 +54,7 @@ public class Main {
     private static void menuTambah() {
         String npm, nama;
         double ipk;
+        @SuppressWarnings("unused")
         boolean valid = true;
 
         do {
