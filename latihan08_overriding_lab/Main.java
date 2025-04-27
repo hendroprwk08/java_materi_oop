@@ -5,8 +5,16 @@ public class Main {
         Perpustakaan perpustakaan = new Perpustakaan();
 
         // Menambahkan buku
-        Buku buku1 = new BukuFiksi("Harry Potter", "J.K. Rowling", 1997, "Fantasi");
-        Buku buku2 = new BukuNonFiksi("Think and Grow Rich", "Napoleon Hill", 1937, "Motivasi");
+        Buku buku1 = new BukuFiksi(
+            "Harry Potter", 
+            "J.K. Rowling", 
+            1997, 
+            "Fantasi");
+        Buku buku2 = new BukuNonFiksi(
+            "Think and Grow Rich", 
+            "Napoleon Hill", 
+            1937, 
+            "Motivasi");
         perpustakaan.tambahBuku(buku1);
         perpustakaan.tambahBuku(buku2);
 
@@ -15,7 +23,8 @@ public class Main {
         perpustakaan.tampilkanSemuaBuku();
 
         // Mencari buku
-        Buku bukuDicari = perpustakaan.cariBuku("Think and Grow Rich");
+        Buku bukuDicari = perpustakaan.cariBuku(
+            "Think and Grow Rich");
         if (bukuDicari != null) {
             System.out.println("\nBuku ditemukan:");
             bukuDicari.tampilInfo();

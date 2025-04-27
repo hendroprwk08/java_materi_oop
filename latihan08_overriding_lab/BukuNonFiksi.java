@@ -4,7 +4,11 @@ public class BukuNonFiksi  extends Buku{
     String topik;
 
     // Konstruktor
-    BukuNonFiksi(String judul, String penulis, int tahunTerbit, String topik) {
+    BukuNonFiksi(
+        String judul, 
+        String penulis, 
+        int tahunTerbit, 
+        String topik) {
         super(judul, penulis, tahunTerbit);
         this.topik = topik;
     }

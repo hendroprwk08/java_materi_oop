@@ -4,7 +4,12 @@ public class BukuFiksi extends Buku {
     String genre;
 
     // Konstruktor
-    BukuFiksi(String judul, String penulis, int tahunTerbit, String genre) {
+    BukuFiksi(
+        String judul, 
+        String penulis, 
+        int tahunTerbit, 
+        String genre
+        ) {
         super(judul, penulis, tahunTerbit);
         this.genre = genre;
     }
@@ -13,6 +18,7 @@ public class BukuFiksi extends Buku {
     @Override
     void tampilInfo() {
         super.tampilInfo();
-        System.out.println("Genre: " + genre);
+        System.out.println("Genre: " + 
+        genre);
     }
 }
