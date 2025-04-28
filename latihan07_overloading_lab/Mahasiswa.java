@@ -29,7 +29,9 @@ public class Mahasiswa {
     }
 
     // Fungsi untuk menghitung rata-rata IPK (overloading)
-    public double hitungRataRataIPK(ArrayList<Mahasiswa> listMahasiswa) {
+    public double hitungRataRataIPK(
+        ArrayList<Mahasiswa> listMahasiswa
+        ) {
         double totalIPK = 0;
         for (Mahasiswa mhs : listMahasiswa) {
             totalIPK += mhs.ipk;

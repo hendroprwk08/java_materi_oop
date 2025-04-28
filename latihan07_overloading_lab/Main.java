@@ -44,7 +44,8 @@ public class Main {
                 System.out.println();            
             }
             System.out.println("-----------------------------");
-            System.out.println("Rata-rata "+ new Mahasiswa().hitungRataRataIPK(mhsList));
+            System.out.println("Rata-rata "+ 
+            new Mahasiswa().hitungRataRataIPK(mhsList));
             System.out.println("Lanjut...");
             sc.nextLine();
             sc.nextLine();
