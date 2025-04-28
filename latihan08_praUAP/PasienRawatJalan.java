@@ -4,7 +4,9 @@ package latihan08_praUAP;
 class PasienRawatJalan extends Pasien {
     private String penyakit;
 
-    public PasienRawatJalan(String nama, String alamat, String penyakit) {
+    public PasienRawatJalan(String nama, 
+    String alamat, 
+    String penyakit) {
         super(nama, alamat);
         this.penyakit = penyakit;
     }
