@@ -2,7 +2,6 @@ package latihan06_uts_2024;
 
 import java.util.ArrayList;
 
-
 public class Transaksi {
     ArrayList<Cargo> cargoList = new ArrayList<>();
     ArrayList<Barang> barangList = new ArrayList<>();
@@ -35,11 +34,12 @@ public class Transaksi {
         System.out.println("=== Pembayaran ===");
         System.out.println("Kategori : "+ kategori);
         System.out.println("Pajak : "+ pajak );
-        System.out.println(String.format("Total : Rp.%,2d", (int)total));
+        System.out.println(String.format("Total : Rp.%,2d", 
+        (int)total));
         System.out.println();
         System.out.println("========================");
         System.out.println("Cargo    : "+ this.cargoList.get(0).getNama());
-        System.out.println("Barang   : "+ this.barangList.get(0).getNama());
+        System.out.println("Barang   : "+  this.barangList.get(0).getNama());
     }
 
 }

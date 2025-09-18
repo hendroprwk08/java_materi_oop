@@ -1,33 +1,7 @@
 package latihan04_koperasi;
 
-public class KaryawanHonorer {
-    private String nik, nama, golongan;
-    private int bulan;
+public class KaryawanHonorer extends Karyawan{
     
-    // jangan menggunakan constructor sebelum UTS
-    // public KaryawanHonorer(String nk, String nm, String gl, int bl) {
-    //     this.nik = nk;
-    //     this.nama = nm;
-    //     this.golongan = gl;
-    //     this.bulan = bl;
-    // }
-
-    public void setNik(String nik) {
-        this.nik = nik;
-    }
-
-    public void setNama(String nama) {
-        this.nama = nama;
-    }
-
-    public void setGolongan(String golongan) {
-        this.golongan = golongan;
-    }
-
-    public void setBulan(int bulan) {
-        this.bulan = bulan;
-    }
-
     public void infoPinjam(){
         int pinjaman = 0;
         
@@ -40,8 +14,8 @@ public class KaryawanHonorer {
         }
 
         double bunga = (double) pinjaman * 0.025;
-        int jumlah = (pinjaman + (int)bunga);
-        int perbulan = jumlah / bulan;
+        int jumlah = (pinjaman - (int)bunga);
+        int perbulan = pinjaman / bulan;
         
         System.out.println("--- INFO PEMINJAM ---");
         System.out.println("NIK : \t\t"+ this.nik);

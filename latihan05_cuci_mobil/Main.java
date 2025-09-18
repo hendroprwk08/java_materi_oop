@@ -86,7 +86,7 @@ public class Main {
 
         int jasa = t.getBiayaJenis(jenis);
         double pajak = jasa * 0.025;
-        int total = jasa + (int)pajak;
+        int total = jasa + (int)pajak;        
 
         System.out.println(String.format("By. Jasa: \tRp.%,2d", jasa));
         System.out.println(String.format("Pajak: \t\tRp.%,2d", (int)pajak ));
