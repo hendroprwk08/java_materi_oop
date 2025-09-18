@@ -1,3 +1,5 @@
+package Latihan01b_objek;
+
 // inisiasi class Mahasiswa
 // [ belum bisa dijalankan ]
 public class Mahasiswa {

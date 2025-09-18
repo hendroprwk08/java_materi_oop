@@ -1,4 +1,4 @@
-package latihan02_objek_list;
+package Latihan02b_objek_list;
 
 public class Buku {
     String id, judul;

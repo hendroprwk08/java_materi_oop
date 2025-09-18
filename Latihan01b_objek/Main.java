@@ -1,3 +1,5 @@
+package Latihan01b_objek;
+
 public class Main {
     public static void main(String[] args) {
         Mahasiswa m = new Mahasiswa();
