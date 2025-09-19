@@ -1,4 +1,4 @@
-package Latihan01a_pengenalan_list;
+package latihan01b_pengenalan_list;
 
 public class Buku {
     String judul, pengarang;
