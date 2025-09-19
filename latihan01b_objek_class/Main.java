@@ -6,7 +6,6 @@ public class Main {
         m.npm = "20204350009";
         m.nama = "Jogiyanto";
         m.alamat = "Klaten";
-
         m.info();
 
         MataKuliah mk = new MataKuliah();

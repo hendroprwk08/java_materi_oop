@@ -1,4 +1,5 @@
 package latihan01a_perkenalan_array_keyval;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,7 +9,7 @@ public class Variabel {
         final String marga = "Siahaan";
         int usia = 23;
 
-        // akan error, karena "final"
+        // kode dibawah ini akan error, karena "final"
         // marga = "napitupulu";
 
         System.out.println(nama);
