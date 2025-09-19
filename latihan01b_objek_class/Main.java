@@ -1,4 +1,4 @@
-package latihan01a_objek_class;
+package latihan01b_objek_class;
 
 public class Main {
     public static void main(String[] args) {

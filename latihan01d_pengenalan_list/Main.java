@@ -1,4 +1,4 @@
-package latihan01b_pengenalan_list;
+package latihan01d_pengenalan_list;
 
 import java.util.ArrayList;
 

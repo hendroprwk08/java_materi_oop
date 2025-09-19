@@ -1,4 +1,4 @@
-package latihan01a_objek_class;
+package latihan01b_objek_class;
 
 // inisiasi class Mahasiswa
 // [ belum bisa dijalankan ]

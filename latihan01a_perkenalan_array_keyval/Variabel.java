@@ -1,4 +1,4 @@
-package latihan02a_perkenalan_array_keyval;
+package latihan01a_perkenalan_array_keyval;
 import java.util.HashMap;
 import java.util.Map;
 
