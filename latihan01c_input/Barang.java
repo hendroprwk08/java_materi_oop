@@ -40,7 +40,6 @@ public class Barang {
         this.stok = stok;
     }
 
-    // Metode
     public void tambahStok(int jumlah) {
         this.stok += jumlah;
     }
