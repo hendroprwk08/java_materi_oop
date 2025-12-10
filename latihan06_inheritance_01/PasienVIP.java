@@ -5,6 +5,7 @@ class PasienVIP extends Pasien {
         super(nama, umur, jenisKelamin);
     }
 
+    @Override
     public void bayar() {
         System.out.println("Pasien VIP mendapatkan pelayanan khusus.");
     }

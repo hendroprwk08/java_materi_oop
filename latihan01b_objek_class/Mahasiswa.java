@@ -1,6 +1,5 @@
 package latihan01b_objek_class;
 
-// inisiasi class Mahasiswa
 // [ belum bisa dijalankan ]
 public class Mahasiswa {
     public String npm, nama, alamat;

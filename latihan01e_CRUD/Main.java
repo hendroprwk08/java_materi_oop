@@ -34,7 +34,7 @@ public class Main {
                     mhs.setNpm(nim);
                     mhs.setNama(nama);
                     mhs.setAlamat(alamat);
-                    mhsArrayList.add(mhs);
+                    mhsArrayList.add(mhs); // simpan
                     System.out.println("Data mahasiswa berhasil ditambahkan.");
                     break;
 
@@ -88,6 +88,8 @@ public class Main {
                     break;
             }
         } while (pilihan != 5);
+
+        scanner.close();
 
     }
 }

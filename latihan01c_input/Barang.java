@@ -61,5 +61,4 @@ public class Barang {
                     b.getIdBarang(), b.getNamaBarang(), b.getHarga(), b.getStok()));
         }
     }
-
 }

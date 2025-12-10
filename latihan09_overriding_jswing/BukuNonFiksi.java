@@ -1,10 +1,10 @@
-package latihan08_overriding_lab;
+package latihan09_overriding_jswing;
 
 public class BukuNonFiksi  extends Buku{
     String topik;
 
     // Konstruktor
-    public BukuNonFiksi(
+    BukuNonFiksi(
         String judul, 
         String penulis, 
         int tahunTerbit, 

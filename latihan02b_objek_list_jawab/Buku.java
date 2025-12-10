@@ -1,19 +1,9 @@
-package Latihan02b_objek_list;
+package latihan02b_objek_list_jawab;
 
 public class Buku {
     String id, judul;
     int halaman;
-
-    /*  
-    sebelum UTS, jangan gunakan constructor
     
-    public Buku(String id, String judul, int halaman) {
-        this.id = id;
-        this.judul = judul;
-        this.halaman = halaman;
-    }
-    */
-
     public String getId() {
         return id;
     }

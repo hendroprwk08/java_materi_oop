@@ -8,6 +8,7 @@ class PasienBPJS extends Pasien {
         this.noKartu = noKartu;
     }
 
+    @Override
     public void bayar() {
         System.out.println("Pasien BPJS menggunakan kartu BPJS dengan nomor: " + noKartu);
     }

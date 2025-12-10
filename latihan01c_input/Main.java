@@ -38,7 +38,8 @@ public class Main {
                     barang.setStok(input.nextInt());
                     input.nextLine();
 
-                    daftarBarang.add(barang);
+                    daftarBarang.add(barang); // simpan
+                    
                     System.out.println("Barang berhasil ditambahkan.");
                     break;
 

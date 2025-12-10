@@ -1,4 +1,4 @@
-package Latihan02b_objek_list;
+package latihan02b_objek_list_soal;
 
 public class Anggota {
     String npm, nama, kelas;
@@ -12,7 +12,7 @@ public class Anggota {
         this.kelas = kelas;
     }
     */
-
+ 
     public String getNpm() {
         return npm;
     }

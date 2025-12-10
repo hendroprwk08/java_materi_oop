@@ -9,7 +9,7 @@ public class Variabel {
         final String marga = "Siahaan";
         int usia = 23;
 
-        // kode dibawah ini akan error, karena "final"
+        // kode dibawah ini akan error, karena "final String marga"
         // marga = "napitupulu";
 
         System.out.println(nama);

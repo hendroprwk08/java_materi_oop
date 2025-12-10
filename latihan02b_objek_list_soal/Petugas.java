@@ -1,4 +1,4 @@
-package Latihan02b_objek_list;
+package latihan02b_objek_list_soal;
 
 import java.util.ArrayList;
 
@@ -15,8 +15,26 @@ public class Petugas {
     }
 
     void pinjamBuku(Anggota a, Buku b) {
+        /*
+         * TODO
+         * perbaiki bagian ini
+         */
         anggotaList.add(a);
         bukuList.add(b);
+    }
+
+    void hapusPinjamBuku(int parameter) {
+        /*
+         * TODO
+         * Buatlah bagian ini
+         */
+    }
+
+    void tampilPinjamBuku() {
+        /*
+         * TODO
+         * Buatlah bagian ini
+         */
     }
 
     void tampilAnggota() {
@@ -29,7 +47,9 @@ public class Petugas {
                     "| %-2s | %-5s | %-13s | %-3s |",
                     no + 1,
                     a.getNpm(),
-                    (a.getNama().length() > 13) ? a.getNama().substring(0, 13): a.getNama(),
+                    (a.getNama().length() > 13) ? 
+                    a.getNama().substring(0, 13): 
+                    a.getNama(),
                     a.getKelas());
             System.out.println();
             no++;
@@ -55,7 +75,8 @@ public class Petugas {
                     "| %-2s | %-4s | %-15s | %-3s |",
                     no + 1,
                     b.getId(),
-                    (b.getJudul().length() > 15 ) ? b.getJudul().substring(0, 15) : b.getJudul(),
+                    (b.getJudul().length() > 15 ) ? 
+                    b.getJudul().substring(0, 15) : b.getJudul(),
                     b.getHalaman());
             System.out.println();
             no++;
@@ -66,5 +87,9 @@ public class Petugas {
     
     int jumlahBuku(){
         return bukuList.size();
+    }
+
+    void hapusBuku(int index){
+        bukuList.remove(index);
     }
 }

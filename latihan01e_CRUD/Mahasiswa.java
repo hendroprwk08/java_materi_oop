@@ -40,8 +40,7 @@ public class Mahasiswa {
             mhs.getNama(), 
             mhs.getAlamat()));
             System.out.println("----------------------------------------");
-        }
-        
+        }        
     }
 
     /*
