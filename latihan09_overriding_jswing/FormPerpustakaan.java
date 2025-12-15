@@ -1,7 +1,6 @@
 package latihan09_overriding_jswing;
 
 import javax.swing.*;
-import java.awt.*;
 
 public class FormPerpustakaan extends JFrame {
 
